@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="https://bcw.blob.core.windows.net/public/img/9977764104160066">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css"
+    integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <title>pokedex</title>
+</head>
+
+<body>
+  <header>
+    <nav class=" bg-danger1 border-bottom border-dark border-4 text-light container-fluid">
+      <div class="row " href="#">
+        <div class="col-4"> </div>
+        <div class="col-4 my-3 text-center">
+          <h3 class="m-0">
+            <strong>POKEDEX</strong>
+          </h3>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-end">
+          <button class="border border-dark border-1 bg-light btn btn-light me-5" data-bs-toggle="offcanvas"
+            data-bs-target="#rightBar" onclick="">My Pokemon</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container-fluid mt-4">
+      <div class="row justify-content-evenly">
+        <div class="col-4">
+          <div id="selected-poke">
+            <!-- SelectedPoke Template -->
+            <div class="card p-2 bg-danger1 text-center elevation-2">
+              <h2 class="m-0 bg-light border border-4 border-secondary rounded ">Find A Pokemon</h2>
+            </div>
+            <div>
+              <img src="https://pngimg.com/uploads/pokeball/pokeball_PNG21.png" alt="Pokemon Image Here :)"
+                class="img-fluid my-4">
+            </div>
+            <div class="card p-2 bg-danger1 text-center elevation-2">
+              <div class="bg-light border border-4 border-secondary rounded p-5">
+                <!-- <div class="d-flex">
+                  <h5>Height:</h5>
+                  <h5 class="mx-3">Weight:</h5>
+                  <h5>Types:</h5>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button class="btn btn-outline-danger" onclick="">CATCH</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card border border-dark border-2 p-1 " id="main-pokes-list">
+            <!-- MainPokeList Template -->
+            <!-- <div class="d-flex justify-content-start align-items-center py-1 selectable rounded-2">
+              <i class="mdi mdi-pokeball text-center me-2"></i>
+              <h6 class="mb-0 text-center">Guy</h6>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="offcanvas offcanvas-end bg-danger2 text-light" tabindex="-1" id="rightBar"
+    aria-labelledby="rightBarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title rounded px-2 bg-light text-dark elevation-2 border border-secondary border-2"
+        id="rightBarLabel">
+        Caught Pokemon</h5>
+      <button type="button" class="btn-close bg-light rounded elevation-1" data-bs-dismiss="offcanvas"
+        aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body" id="user-pokes">
+      <!-- Template -->
+      <div class="card border border-secondary border-2 p-1 elevation-1">
+        <div class="text-dark py-1 rounded-2 d-flex justify-content-between">
+          <h4 class="mb-0">
+            <i class="mdi mdi-pokeball text-center me-2"></i>
+            Guy
+          </h4>
+          <i class="mdi mdi-skull on-hover fs-5 selectable rounded px-2"
+            onclick="app.sandboxSpellsController.deleteSpell('${this.id}')"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js'
+    integrity='sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=='
+    crossorigin='anonymous' referrerpolicy='no-referrer'></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"
+    integrity="sha256-hw7v8jZF/rFEdx1ZHepT4D73AFTHLu/P9kEyrNesRyc=" crossorigin="anonymous"></script>
+  <script src="app/App.js" type="module"></script>
+</body>
+
+</html>

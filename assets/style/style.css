@@ -1,0 +1,17 @@
+/* BASIC STYLES HERE */
+
+
+main {
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e42b702a-1af0-4496-95c7-9a69c3614a60/d55xmlz-36575942-1d5b-4d61-b741-8c8c6a74bbe3.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U0MmI3MDJhLTFhZjAtNDQ5Ni05NWM3LTlhNjljMzYxNGE2MFwvZDU1eG1sei0zNjU3NTk0Mi0xZDViLTRkNjEtYjc0MS04YzhjNmE3NGJiZTMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.OWChHeZNVKaq65Mk88nqxPTgy5o3Z2sn8S5VAqL_WPs);
+  background-size: cover;
+}
+
+.bg-danger1 {
+  /* --bs-bg-opacity: 1; */
+  background-color: #d90a26;
+}
+
+.bg-danger2 {
+  /* --bs-bg-opacity: 1; */
+  background-color: #ad061f;
+}
