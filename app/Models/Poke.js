@@ -6,7 +6,7 @@ export class Poke {
     this.name = data.name
     this.type1 = data.types[0].type.name
     // NOTE why doesnt this work?????
-    this.type2 = data.types[1] ? data.types[1].type.name : 'nah'
+    this.type2 = data.types[1] ? data.types[1].type.name : 'N/A'
     this.weight = data.weight
     this.height = data.height
     this.img = data.sprites.front_default
@@ -23,9 +23,9 @@ export class Poke {
             <div class="card p-2 bg-danger1 text-center elevation-2">
               <h2 class="m-0 bg-light border border-4 border-secondary rounded ">${this.name}</h2>
             </div>
-            <div>
+            <div class="text-center">
               <img src="${this.img}" alt="Pokemon Image Here :)"
-                class="img-fluid my-4">
+                class="img-fluid my-4 img ">
             </div>
             <div class="card p-2 bg-danger1 text-center elevation-2">
               <div class="bg-light border border-4 border-secondary rounded p-2">

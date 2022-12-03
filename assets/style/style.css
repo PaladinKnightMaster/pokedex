@@ -15,3 +15,15 @@ main {
   /* --bs-bg-opacity: 1; */
   background-color: #ad061f;
 }
+
+.marhey {
+  font-family: 'Marhey', cursive;
+}
+
+.quantico {
+  font-family: 'Quantico', sans-serif;
+}
+
+.img {
+  height: 45vh;
+}
